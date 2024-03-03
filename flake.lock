@@ -5,16 +5,33 @@
         "systems": "systems"
       },
       "locked": {
-        "lastModified": 1705309234,
-        "narHash": "sha256-uNRRNRKmJyCRC/8y1RqBkqWBLM034y4qN7EprSdmgyA=",
+        "lastModified": 1709126324,
+        "narHash": "sha256-q6EQdSeUZOG26WelxqkmR7kArjgWCdw5sfJVHPH/7j8=",
         "owner": "numtide",
         "repo": "flake-utils",
-        "rev": "1ef2e671c3b0c19053962c07dbda38332dcebf26",
+        "rev": "d465f4819400de7c8d874d50b982301f28a84605",
         "type": "github"
       },
       "original": {
         "id": "flake-utils",
         "type": "indirect"
+      }
+    },
+    "jsonresume-theme-stackoverflow-macchiato": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1709546486,
+        "narHash": "sha256-IoT5vO41BKUeYj3frWe76IMSo2ss2GHSIzcNpL5Cc+I=",
+        "owner": "KiaraGrouwstra",
+        "repo": "jsonresume-theme-stackoverflow",
+        "rev": "30c22e357e7e3fe8d6fe24c3e5b334849e5dc946",
+        "type": "github"
+      },
+      "original": {
+        "owner": "KiaraGrouwstra",
+        "ref": "macchiato",
+        "repo": "jsonresume-theme-stackoverflow",
+        "type": "github"
       }
     },
     "nixpkgs": {
@@ -34,6 +51,7 @@
     "root": {
       "inputs": {
         "flake-utils": "flake-utils",
+        "jsonresume-theme-stackoverflow-macchiato": "jsonresume-theme-stackoverflow-macchiato",
         "nixpkgs": "nixpkgs"
       }
     },

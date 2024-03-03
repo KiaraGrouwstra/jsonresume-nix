@@ -71,6 +71,7 @@ local directory (given that you have `nodejs` available, use
 Then you should be able to use `nix-shell` to make `resumed` available
 as well and test the theme by running:
 
+    nix shell nixpkgs#nodejs nixpkgs#resumed
     resumed render --theme $(pwd)/node_modules/jsonresume-theme-THEMENAME/index.js
 
 The full path seems to be super important here. If this works you can

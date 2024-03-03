@@ -2,6 +2,10 @@
   description = "jsonresume-nix";
 
   inputs.flake-utils.url = "flake-utils";
+  inputs.jsonresume-theme-stackoverflow-macchiato = {
+    url = "github:KiaraGrouwstra/jsonresume-theme-stackoverflow/macchiato";
+    flake = false;
+  };
 
   outputs = {
     self,
@@ -101,7 +105,7 @@
         '';
 
         buildThemeBuilder = themeName: let
-          themePkg = pkgs.callPackage ./themes/jsonresume-theme-${themeName} {};
+          themePkg = pkgs.callPackage ./themes/jsonresume-theme-${themeName} {inherit inputs;};
         in
           pkgs.writeShellScript "resumed-render-wrapped-${themeName}-${themePkg.version}" ''
             set -eou pipefail
@@ -126,6 +130,7 @@
         resumed-kendall = buildThemeBuilder "kendall";
         resumed-macchiato = buildThemeBuilder "macchiato";
         resumed-stackoverflow = buildThemeBuilder "stackoverflow";
+        resumed-stackoverflow-macchiato = buildThemeBuilder "stackoverflow-macchiato";
       };
     })
     // {inherit inputs;};

@@ -3,7 +3,7 @@
 
   inputs.flake-utils.url = "flake-utils";
   inputs.jsonresume-theme-stackoverflow-macchiato = {
-    url = "github:KiaraGrouwstra/jsonresume-theme-stackoverflow/macchiato";
+    url = "github:KiaraGrouwstra/jsonresume-theme-stackoverflow/macchiato-nl";
     flake = false;
   };
 

@@ -1,4 +1,5 @@
 {
+  lib,
   inputs,
   buildNpmPackage,
   fetchFromGitHub,
@@ -10,7 +11,8 @@ in
     inherit pname version;
     src = inputs.jsonresume-theme-stackoverflow-macchiato;
     dontNpmBuild = true;
-    npmDepsHash = "sha256-93GARhAJws1NBAjncFEcSwdJRrONVRuuMBDUDVsySdo=";
+    # npmDepsHash = lib.fakeHash;
+    npmDepsHash = "sha256-/wqJ0QLWdL0GDlhFzOMOcmt6zZ0OuTbiVTz+CyohCfM=";
 
     meta = {
       description = "Stack Overflow theme for JSON Resume";

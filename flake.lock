@@ -20,11 +20,11 @@
     "jsonresume-theme-stackoverflow-macchiato": {
       "flake": false,
       "locked": {
-        "lastModified": 1709557271,
-        "narHash": "sha256-6J/1e4PQsMmqHxfEPJkhJM+nCWtrBqKrq0ZgZbogZZQ=",
+        "lastModified": 1709749713,
+        "narHash": "sha256-+lpfswYXhHdj2M8JAbQEKtKWeElk+tnikY+Ol/r8oc8=",
         "owner": "KiaraGrouwstra",
         "repo": "jsonresume-theme-stackoverflow",
-        "rev": "a01498f083ce21b14932acd206016b1a94bd9688",
+        "rev": "0887a94d20b903ce78fa1b681015c15dc10c2d81",
         "type": "github"
       },
       "original": {
